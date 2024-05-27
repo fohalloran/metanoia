@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="design-doc-style.css">
+  <title>Metanoia</title>
+</head>
+<body>
+
+    <h3><span><h1>Metanoia</h1>, from Greek metanoein meaning change one's mind</span></h3>
+    <h2>Context and scope</h2>
+      <p>The aim of this project is to create a sprint retrospective tool that can help scrum teams to streamline their retrospective process. It will do this by allowing teams to have flexibility over their boards, ensuring that previous actions are reminded of and performed and that all team members have an equal opportunity to share feedback with the team</p>
+    <h2>Design goals</h2>
+    <p>
+      <ul>
+        <li>Team should have rolling list of incomplete actions</li>
+        <li>There should be flexibility surround anonymisation and other team norm preferences</li>
+        <li>There should be a distinct difference between scrum leadership accounts and others</li>
+        <li>Once a retrospective is complete, they should have the ability to freeze the board</li>
+
+      </ul>
+    </p>
+    <h2>Technical goals</h2>
+    <p>
+      <ul>
+        <li>Cloud based - scalable, fault tolerant</li>
+        <li>Containerised services</li>
+        <li>API Analytics output</li>
+        <li>Real time editing of notes - team members can be notes as they're added</li>
+      </ul>
+    </p>
+
+    <h2>Design</h2>
+    <p>
+      <h4>Pages</h4>
+      <ul>
+        <li>Retro board select</li>
+        <li>Retro session</li>
+        <ul>
+          <li>4 Columns</li>
+          <ul>
+            <li>Successes</li>
+            <li>improvements</li>
+            <li>New actions</li>
+            <li>Previous actions</li>
+          </ul>
+          <li>Ability to freeze board at end of session</li>
+        </ul>
+        <li>Board specific settings</li>
+        <li>Global settings</li>
+      </ul>
+    </p>
+    <h2>APIs</h2>
+    <p>There should be an API for analytics output. As each scrum team can't be compared to eachother, the analytics should be performed only internally for a particular scrum team. This may be because teams have differing normals in terms of granularity of improvements/actions/successes</p>
+    <h2>Data Storage</h2>
+    <p>A file based data storage system such as MongoDB many of the disadvantages to MongoDB are less impactful on this project, such as lack of joins. Using a file based storage method means that I can have a file for each board, which will make storage very simple</p>
+    <h2>Wireframes</h2>
+    <p>A file based data storage system such as MongoDB many of the disadvantages to MongoDB are less impactful on this project, such as lack of joins. Using a file based storage method means that I can have a file for each board, which will make storage very simple</p>
+</body>
+</html> 
